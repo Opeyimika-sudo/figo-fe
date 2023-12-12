@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+  
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea, select, button {
+  font: inherit;
+}
+
+.cursorChange:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
+  border: 2px lightgreen solid;
+}
+
+.button, .paragraph {
+  opacity: 0;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0,auto;
+}
+
+.cursorChange:hover ~ .button  {
+  opacity: 1;
+}
+
+.button:hover  {
+  opacity: 1;
+}
+
+.cursorChange:hover ~ .paragraph  {
+  opacity: 1 !important;
+}
